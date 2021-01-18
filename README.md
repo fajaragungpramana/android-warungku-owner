@@ -9,9 +9,11 @@ Location  : Indonesia
 ```
 
 ### Information
+```bash
 Dependency management using kotlin dsl
 Dependencies injection using Dagger HILT
 Modularization
 MVVM
 SOME CUSTOM VIEW
 RETROFIT
+```
