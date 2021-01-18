@@ -41,5 +41,6 @@ dependencies {
     implementation(project(":resources"))
 
     implementation(Dependencies.Layout.MATERIAL_DESIGN)
+    implementation(Dependencies.Layout.CONSTRAINT_LAYOUT)
 
 }
