@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <dimen name="corner_small">4dp</dimen>
     <dimen name="corner_primary">8dp</dimen>
     <dimen name="corner_rectangle_button_primary">28dp</dimen>
 
