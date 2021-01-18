@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="product">Product</string>
+    <string name="search_product">Search Product…</string>
+    <string name="all">All</string>
+    <string name="food">Food</string>
+    <string name="drink">Drink</string>
+    <string name="medicine">Medicine</string>
+    <string name="tool">Tool</string>
+    <string name="warn_message_add_product_information">Please fill in the product data correctly so that it is easier for you to manage that data.</string>
+    <string name="add_product">Add Product</string>
+    <string name="product_information">Product Information</string>
+    <string name="name">Name</string>
+</resources>

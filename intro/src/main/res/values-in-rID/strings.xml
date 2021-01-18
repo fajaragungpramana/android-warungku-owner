@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="skip">Lewati</string>
+    <string name="next">Lanjut</string>
+    <string name="done">Selesai</string>
+    <string name="title">Judul</string>
+    <string name="message">Pesan</string>
+
+    <array name="intro_images">
+        <item>@drawable/ic_intro_one</item>
+        <item>@drawable/ic_intro_two</item>
+        <item>@drawable/ic_intro_three</item>
+        <item>@drawable/ic_intro_four</item>
+    </array>
+
+    <string-array name="intro_titles">
+        <item>Kelola Produk</item>
+        <item>Kelola Karyawan</item>
+        <item>Transaksi Mudah</item>
+        <item>Pesanan Pembeli</item>
+    </string-array>
+
+    <string-array name="intro_messages">
+        <item>Sekarang produk yang kamu jual bisa di kelola dengan mudah lewat smartphone kamu.</item>
+        <item>Sekarang kamu bisa kelola kehadiran, gaji dan bonus untuk karyawan dengan mudah.</item>
+        <item>Sekarang transaksi dengan pembeli jadi lebih mudah dengan scan bar code.</item>
+        <item>Sekarang kamu bisa bertransaksi secara online dengan pembeli.</item>
+    </string-array>
+
+</resources>

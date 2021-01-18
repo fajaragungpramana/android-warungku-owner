@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WarungKu Owner</string>
+    <string name="title_auth">auth</string>
+    <string name="title_dashboard">dashboard</string>
+    <string name="title_intro">intro</string>
+    <string name="title_product">product</string>
+</resources>

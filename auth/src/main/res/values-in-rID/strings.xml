@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warungku">WarungKu</string>
+    <string name="register">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="started_message">Kami akan membantu kamu mengelola warung dengan mudah dan menjangkau konsumen yang lebih luas.</string>
+    <string name="email">Email</string>
+    <string name="hello">Hallo,</string>
+    <string name="login_message">Selamat datang kembali silahkan masuk dengan akun kamu untuk melanjutkan!</string>
+    <string name="full_name">Nama lengkap</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Lupa password?</string>
+    <string name="welcome">Selamat Datang,</string>
+    <string name="register_message">Mari bergabung dengan kami, kami akan membantu mengelola warung kamu!</string>
+    <string name="store_name">Nama toko</string>
+    <string name="error_email_format">Format email tidak benar!</string>
+    <string name="error_password_empty">Password tidak boleh kosong!</string>
+    <string name="error_name">Nama min 4 karakter!</string>
+    <string name="error_password_minus">Password min 8 karakter!</string>
+    <string name="error_email_has_been_registered">Email sudah terdaftar!</string>
+    <string name="verification_title">Tinggal Selangkah Lagi,</string>
+    <string name="verification_message">Untuk keamanan kami perlu melakukan verifikasi ke akun kamu!</string>
+    <string name="verification_info">Kami telah mengirimkan kode verifikasi ke email</string>
+    <string name="verification_not_receive_code">Tidak menerima kode?</string>
+    <string name="resending">Kirim Ulang</string>
+    <string name="verification">Verifikasi</string>
+    <string name="error_email_not_registered">Email tidak terdaftar!</string>
+    <string name="error_wrong_password">Password salah!</string>
+    <string name="error_token_exp">Token Kadaluarsa!</string>
+    <string name="error_wrong_code">Kode Salah!</string>
+</resources>

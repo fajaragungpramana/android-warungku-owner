@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warungku">WarungKu</string>
+    <string name="register">Register</string>
+    <string name="login">Log In</string>
+    <string name="started_message">We will help you easily manage your shop and reach a wider range of consumers.</string>
+    <string name="email">Email</string>
+    <string name="hello">Hello,</string>
+    <string name="login_message">Welcome back, please log in with your account to continue!</string>
+    <string name="full_name">Full name</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="welcome">Welcome,</string>
+    <string name="register_message">Come join us, we will help manage your shop!</string>
+    <string name="store_name">Store name</string>
+    <string name="error_email_format">Invalid email format!</string>
+    <string name="error_password_empty">Password should not be empty!</string>
+    <string name="error_name">Name min 4 character!</string>
+    <string name="error_password_minus">Password min 8 character!</string>
+    <string name="error_email_has_been_registered">Email is already registered!</string>
+    <string name="verification_title">Just one more step,</string>
+    <string name="verification_message">For security we need to verify your account!</string>
+    <string name="verification_info">We have sent a verification code to the email</string>
+    <string name="verification_not_receive_code">Didn\'t receive the code?</string>
+    <string name="resending">Resending</string>
+    <string name="verification">Verification</string>
+    <string name="error_email_not_registered">Email is not registered!</string>
+    <string name="error_wrong_password">Wrong password!</string>
+    <string name="error_token_exp">Token Expired!</string>
+    <string name="error_wrong_code">Wrong Code!</string>
+</resources>

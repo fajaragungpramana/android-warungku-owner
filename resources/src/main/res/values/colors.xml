@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_primary">#56C596</color>
+    <color name="color_primary_variant">#9E9E9E</color>
+    <color name="color_on_primary">#329D9C</color>
+    <color name="color_primary_text">#333333</color>
+    <color name="color_primary_divide">#EBEBEB</color>
+    <color name="color_primary_warn">#F2994A</color>
+
+    <color name="color_secondary_text">#828282</color>
+    <color name="color_secondary_divide">#80F2F2F2</color>
+    <color name="color_secondary_warn">#4DF2994A</color>
+
+</resources>

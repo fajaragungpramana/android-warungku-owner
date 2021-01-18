@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="corner_primary">8dp</dimen>
+    <dimen name="corner_rectangle_button_primary">28dp</dimen>
+
+    <dimen name="elevation_primary">2dp</dimen>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_primary">8dp</dimen>
+    <dimen name="margin_secondary">16dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_high">32dp</dimen>
+
+    <dimen name="padding_primary">8dp</dimen>
+    <dimen name="padding_secondary">16dp</dimen>
+
+    <dimen name="size_stroke">1dp</dimen>
+
+    <dimen name="text_heading_primary">20sp</dimen>
+    <dimen name="text_body_primary">14sp</dimen>
+    <dimen name="text_button_primary">14sp</dimen>
+    <dimen name="text_caption_primary">12sp</dimen>
+
+</resources>

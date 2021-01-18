@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Beranda</string>
+    <string name="message">Pesan</string>
+    <string name="profile">Profil</string>
+    <string name="income_today">Pendapatan Hari Ini</string>
+    <string name="profit_today">Keuntungan Hari Ini</string>
+    <string name="percentage">Persentase</string>
+    <string name="product">Produk</string>
+    <string name="employee">Karyawan</string>
+    <string name="transaction">Transaksi</string>
+    <string name="order">Pesanan</string>
+    <string name="customer_contact">Kontak Pelanggan</string>
+    <string name="report_result">Laporan Hasil</string>
+    <string name="out_money">Uang Keluar</string>
+    <string name="other">Lainnya</string>
+    <string name="tips_for_you">Tips untuk kamu</string>
+    <string name="more_details">Selengkapnya</string>
+</resources>

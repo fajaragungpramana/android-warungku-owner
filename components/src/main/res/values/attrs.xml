@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FormField">
+        <attr name="hint" format="reference|string"/>
+        <attr name="inputType">
+            <flag name="text" value="0x00000001" />
+            <flag name="textEmailAddress" value="0x00000021" />
+            <flag name="textPersonName" value="0x00000061" />
+            <flag name="textPassword" value="0x00000081" />
+        </attr>
+        <attr name="passwordToggleEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CardFeature">
+        <attr name="name" format="reference|string" />
+        <attr name="image" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WarnText">
+        <attr name="message" format="reference|string" />
+    </declare-styleable>
+
+</resources>

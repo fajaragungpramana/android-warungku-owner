@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_graph"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.implizstudio.android.app.product.ui.main.ProductMainFragment"
+        tools:layout="@layout/fragment_main_product">
+        <action
+            android:id="@+id/action_main_to_add"
+            app:destination="@id/add"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add"
+        android:name="com.implizstudio.android.app.product.ui.add.ProductAddFragment"
+        tools:layout="@layout/fragment_add_product" />
+
+</navigation>
