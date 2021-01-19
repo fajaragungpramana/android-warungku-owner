@@ -11,4 +11,8 @@
     <string name="add_product">Tambah Produk</string>
     <string name="product_information">Informasi Produk</string>
     <string name="name">Nama</string>
+    <string name="weight">Berat</string>
+    <string name="available">Tersedia</string>
+    <string name="min_order">Min Pesan</string>
+    <string name="expired">Kadaluarsa</string>
 </resources>
