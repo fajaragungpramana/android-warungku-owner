@@ -69,6 +69,69 @@
                 app:hint="@string/name"
                 app:inputType="textPersonName" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_secondary"
+                android:layout_marginTop="@dimen/margin_primary"
+                android:orientation="horizontal">
+
+                <com.implizstudio.android.app.components.field.UnitField
+                    android:id="@+id/uf_add_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_primary"
+                    android:layout_weight="1"
+                    app:hintField="@string/weight"
+                    app:isClickable="true" />
+
+                <com.implizstudio.android.app.components.field.UnitField
+                    android:id="@+id/uf_add_available"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_primary"
+                    android:layout_weight="1"
+                    app:hintField="@string/available"
+                    app:isClickable="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_secondary"
+                android:layout_marginTop="@dimen/margin_primary"
+                android:orientation="horizontal">
+
+                <com.implizstudio.android.app.components.field.UnitField
+                    android:id="@+id/uf_add_min_order"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_primary"
+                    android:layout_weight="1"
+                    app:hintField="@string/min_order" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_add_expired"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_primary"
+                    android:layout_weight="1"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tie_add_expired"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:drawableEnd="@drawable/ic_date"
+                        android:focusable="false"
+                        android:hint="@string/expired" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
