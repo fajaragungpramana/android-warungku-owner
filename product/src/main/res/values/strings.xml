@@ -17,6 +17,10 @@
     <string name="expired">Expired</string>
     <string name="purchase_price">Purchase price</string>
     <string name="sell_price">Sell price</string>
+    <string name="description">Description</string>
+    <string name="barcode">Barcode</string>
+    <string name="warn_message_add_image_product">Please enter the appropriate product image to make it easier to read the product.</string>
+    <string name="product_image">Product Image</string>
 
     <string-array name="weight_unit">
         <item>GR</item>

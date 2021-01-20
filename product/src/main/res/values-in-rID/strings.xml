@@ -17,4 +17,8 @@
     <string name="expired">Kadaluarsa</string>
     <string name="purchase_price">Harga beli</string>
     <string name="sell_price">Harga jual</string>
+    <string name="description">Deskripsi</string>
+    <string name="barcode">Barcode</string>
+    <string name="warn_message_add_image_product">Harap masukan gambar produk yang sesuai agar memudahkan dalam pembacaan produk.</string>
+    <string name="product_image">Gambar Produk</string>
 </resources>
