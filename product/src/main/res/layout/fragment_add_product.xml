@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_primary"
                     android:layout_weight="1"
-                    app:hintField="@string/weight"
+                    app:hintUnit="@string/weight"
                     app:isClickable="true" />
 
                 <com.implizstudio.android.app.components.field.UnitField
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_primary"
                     android:layout_weight="1"
-                    app:hintField="@string/available"
+                    app:hintUnit="@string/available"
                     app:isClickable="true" />
 
             </LinearLayout>
@@ -109,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_primary"
                     android:layout_weight="1"
-                    app:hintField="@string/min_order" />
+                    app:hintUnit="@string/min_order" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/til_add_expired"
@@ -131,6 +131,22 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+
+            <com.implizstudio.android.app.components.field.UnitField
+                android:id="@+id/uf_add_purchase_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_secondary"
+                android:layout_marginTop="@dimen/margin_primary"
+                app:hintUnit="@string/purchase_price" />
+
+            <com.implizstudio.android.app.components.field.PercentageField
+                android:id="@+id/pf_add_sell_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_secondary"
+                android:layout_marginTop="@dimen/margin_primary"
+                app:hintPercentage="@string/sell_price" />
 
         </LinearLayout>
 
