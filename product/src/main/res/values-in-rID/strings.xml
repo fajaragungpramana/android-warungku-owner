@@ -13,6 +13,8 @@
     <string name="name">Nama</string>
     <string name="weight">Berat</string>
     <string name="available">Tersedia</string>
-    <string name="min_order">Min Pesan</string>
+    <string name="min_order">Min pesan</string>
     <string name="expired">Kadaluarsa</string>
+    <string name="purchase_price">Harga beli</string>
+    <string name="sell_price">Harga jual</string>
 </resources>

@@ -13,8 +13,10 @@
     <string name="name">Name</string>
     <string name="weight">Weight</string>
     <string name="available">Available</string>
-    <string name="min_order">Min Order</string>
+    <string name="min_order">Min order</string>
     <string name="expired">Expired</string>
+    <string name="purchase_price">Purchase price</string>
+    <string name="sell_price">Sell price</string>
 
     <string-array name="weight_unit">
         <item>GR</item>
