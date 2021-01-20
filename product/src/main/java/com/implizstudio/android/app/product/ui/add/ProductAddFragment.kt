@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.implizstudio.android.app.components.field.PercentageField
 import com.implizstudio.android.app.components.field.UnitField
 import com.implizstudio.android.app.product.R
 import com.implizstudio.android.app.product.databinding.FragmentAddProductBinding
@@ -43,6 +44,7 @@ class ProductAddFragment : FragmentBase<FragmentAddProductBinding>() {
                 it.unitListener = object : UnitField.UnitListener {
                     override fun getUnitText(value: String) {
                         ufAddMinOrder.setUnitText(value)
+                        ufAddPurchasePrice.setUnitText(value)
                     }
                 }
             }
@@ -58,8 +60,35 @@ class ProductAddFragment : FragmentBase<FragmentAddProductBinding>() {
                 ).show()
             }
 
+            ufAddPurchasePrice.let {
+                it.setUnitText(availableList[0])
+                it.valueListener = object : UnitField.ValueListener {
+                    override fun getValue(value: Long) {
+                        val sellPrice = pfAddSellPrice.getValue()
+
+                        if (sellPrice.isNotEmpty()) {
+                            val sellPriceValue = sellPrice.toLong()
+
+                            if (sellPriceValue != 0L) pfAddSellPrice.setPercentage(sellPriceValue, value)
+                        }
+                    }
+                }
+            }
+
+            pfAddSellPrice.percentageListener = object : PercentageField.PercentageListener {
+                override fun getValue(value: Long) {
+                    val purchasePrice = ufAddPurchasePrice.getValue()
+
+                    if (purchasePrice.isNotEmpty()) {
+                        val purchasePriceValue = purchasePrice.toLong()
+
+                        if (purchasePriceValue != 0L)
+                            pfAddSellPrice.setPercentage(value, purchasePriceValue)
+                    }
+                }
+            }
+
         }
 
     }
-
 }
