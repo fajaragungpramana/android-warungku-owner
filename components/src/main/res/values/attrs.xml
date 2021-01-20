@@ -22,8 +22,12 @@
     </declare-styleable>
 
     <declare-styleable name="UnitField">
-        <attr name="hintField" format="reference|string" />
+        <attr name="hintUnit" format="reference|string" />
         <attr name="isClickable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PercentageField">
+        <attr name="hintPercentage" format="reference|string" />
     </declare-styleable>
 
 </resources>
