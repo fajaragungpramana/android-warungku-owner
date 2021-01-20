@@ -121,6 +121,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/tie_add_expired"
+                        style="@style/TextBodyPrimary"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@android:color/white"
@@ -147,6 +148,85 @@
                 android:layout_marginHorizontal="@dimen/margin_secondary"
                 android:layout_marginTop="@dimen/margin_primary"
                 app:hintPercentage="@string/sell_price" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_add_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_secondary"
+                android:layout_marginTop="@dimen/margin_primary"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_add_description"
+                    style="@style/TextBodyPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:hint="@string/description"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_add_barcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_secondary"
+                android:layout_marginTop="@dimen/margin_primary"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_add_barcode"
+                    style="@style/TextBodyPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:drawableEnd="@drawable/ic_barcode"
+                    android:focusable="false"
+                    android:hint="@string/barcode"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.implizstudio.android.app.components.text.WarnText
+                android:id="@+id/wt_add_image_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_secondary"
+                android:layout_marginTop="@dimen/margin_secondary"
+                app:message="@string/warn_message_add_image_product" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_secondary"
+                android:layout_marginTop="@dimen/margin_secondary"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextButtonPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/product_image"
+                    android:textColor="@color/color_primary_text" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_add_product_image"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_add_product_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         </LinearLayout>
 
