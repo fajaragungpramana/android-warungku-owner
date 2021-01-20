@@ -9,6 +9,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import com.implizstudio.android.app.components.R
 import com.implizstudio.android.app.components.databinding.FieldPercentageBinding
+import java.text.DecimalFormat
 
 class PercentageField @JvmOverloads constructor(
     private val ctx: Context,
@@ -67,16 +68,16 @@ class PercentageField @JvmOverloads constructor(
         viewBinding.tvPercentage.text =
             if (sellPrice > purchasePrice) {
                 val count = sellPrice - purchasePrice
-                val percentage = (count * 100) / sellPrice
+                val percentage = (count * 100.0) / sellPrice
 
                 setPercentageColor(R.color.color_on_primary)
-                "+$percentage%"
+                "+${DecimalFormat("##.##").format(percentage)}%"
             } else {
                 val count = purchasePrice - sellPrice
-                val percentage = (count * 100) / purchasePrice
+                val percentage = (count * 100.0) / purchasePrice
 
                 setPercentageColor(R.color.color_primary_error)
-                "-$percentage%"
+                "-${DecimalFormat("##.##").format(percentage)}%"
             }
     }
 
