@@ -1,6 +1,8 @@
 package com.implizstudio.android.app.components.field
 
 import android.content.Context
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -18,6 +20,7 @@ class UnitField @JvmOverloads constructor(
     private val viewBinding = FieldUnitBinding.inflate(LayoutInflater.from(ctx), this, true)
 
     lateinit var unitListener: UnitListener
+    lateinit var valueListener: ValueListener
 
     private val unitList = mutableListOf<String>()
     private var position = 0
@@ -31,9 +34,30 @@ class UnitField @JvmOverloads constructor(
         )
 
         val isClickable = typedArray.getBoolean(R.styleable.UnitField_isClickable, false)
-        val hint = typedArray.getString(R.styleable.UnitField_hintField)
+        val hint = typedArray.getString(R.styleable.UnitField_hintUnit)
 
-        viewBinding.tilUnit.hint = hint
+        viewBinding.apply {
+            tilUnit.hint = hint
+            tieUnit.addTextChangedListener(object : TextWatcher {
+                override fun afterTextChanged(s: Editable?) {}
+
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    if (::valueListener.isInitialized)
+                        if (s != null && s.isNotEmpty()) {
+                            val value = s.toString().toLong()
+                            if (value != 0L) valueListener.getValue(value)
+                        }
+                }
+            })
+        }
 
         setUnitClickable(isClickable)
 
@@ -86,6 +110,8 @@ class UnitField @JvmOverloads constructor(
         viewBinding.tvUnit.text = value
     }
 
+    fun getValue() = viewBinding.tieUnit.text.toString()
+
     fun getUnitText() = viewBinding.tvUnit.text.toString()
 
     fun setUnitList(list: Array<String>) {
@@ -96,6 +122,10 @@ class UnitField @JvmOverloads constructor(
 
     interface UnitListener {
         fun getUnitText(value: String)
+    }
+
+    interface ValueListener {
+        fun getValue(value: Long)
     }
 
 }
