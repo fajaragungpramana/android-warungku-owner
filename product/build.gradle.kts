@@ -46,4 +46,6 @@ dependencies {
     kapt(Dependencies.Dagger.HILT_COMPILER)
     kapt(Dependencies.Dagger.HILT_VIEW_MODEL_COMPILER)
 
+    implementation(Dependencies.Layout.BARCODE_SCAN)
+
 }
