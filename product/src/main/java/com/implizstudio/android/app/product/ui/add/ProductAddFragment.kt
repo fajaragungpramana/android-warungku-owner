@@ -1,15 +1,25 @@
 package com.implizstudio.android.app.product.ui.add
 
+import android.Manifest
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.appcompat.app.AlertDialog
+import androidx.core.app.ActivityCompat
 import androidx.navigation.fragment.findNavController
+import com.budiyev.android.codescanner.CodeScanner
+import com.budiyev.android.codescanner.CodeScannerView
+import com.implizstudio.android.app.androidwarungkuowner.data.model.constant.Constant
 import com.implizstudio.android.app.components.field.PercentageField
 import com.implizstudio.android.app.components.field.UnitField
 import com.implizstudio.android.app.product.R
 import com.implizstudio.android.app.product.databinding.FragmentAddProductBinding
 import com.implizstudio.android.app.resources.base.FragmentBase
+import com.implizstudio.android.app.resources.util.Permission
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -69,7 +79,10 @@ class ProductAddFragment : FragmentBase<FragmentAddProductBinding>() {
                         if (sellPrice.isNotEmpty()) {
                             val sellPriceValue = sellPrice.toLong()
 
-                            if (sellPriceValue != 0L) pfAddSellPrice.setPercentage(sellPriceValue, value)
+                            if (sellPriceValue != 0L) pfAddSellPrice.setPercentage(
+                                sellPriceValue,
+                                value
+                            )
                         }
                     }
                 }
@@ -88,7 +101,38 @@ class ProductAddFragment : FragmentBase<FragmentAddProductBinding>() {
                 }
             }
 
+            tieAddBarcode.setOnClickListener {
+                if (Permission.isCameraGranted(requireActivity())) {
+                    val dialogScanner = layoutInflater.inflate(
+                        R.layout.dialog_barcode_scanner,
+                        null
+                    )
+                    val codeScannerView = dialogScanner.findViewById<CodeScannerView>(R.id.csv_barcode_scan)
+                    val codeScanner = CodeScanner(requireActivity(), codeScannerView)
+
+                    val alertDialog = AlertDialog.Builder(requireActivity())
+                        .setView(dialogScanner)
+                        .setOnDismissListener { codeScanner.stopPreview() }
+                        .show()
+
+                    codeScanner.setDecodeCallback {
+                        CoroutineScope(Dispatchers.Main).launch {
+                            tieAddBarcode.setText(it.text)
+                            alertDialog.dismiss()
+                        }
+                    }
+
+                    codeScanner.startPreview()
+                } else
+                    ActivityCompat.requestPermissions(
+                        requireActivity(),
+                        arrayOf(Manifest.permission.CAMERA),
+                        Constant.RequestCode.CAMERA
+                    )
+            }
+
         }
 
     }
+
 }
