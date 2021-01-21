@@ -21,4 +21,8 @@ object Constant {
         const val IS_INTRO = "is_intro"
     }
 
+    object RequestCode {
+        const val CAMERA = 1
+    }
+
 }
