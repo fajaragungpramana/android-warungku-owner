@@ -58,6 +58,7 @@ object Dependencies {
         const val DOT_INDICATOR = "com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2"
         const val SWIPE_REFRESH = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
         const val RECYCLER_VIEW = "androidx.recyclerview:recyclerview:1.1.0"
+        const val BARCODE_SCAN = "com.budiyev.android:code-scanner:2.1.0"
     }
 
     object SquareUp {
